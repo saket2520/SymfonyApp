@@ -1,0 +1,24 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1> PRINTING PARAMETERS DYNAMICALLY ACCORDING TO INPUT NUMBER </h1>
+        <div>
+            {% for key, parameter in parameters%}
+                {% if loop.index <= id and id <= 11 %}
+                    <p>The {{key}} is: {{parameter}}</p>
+                {% else %}
+                    {% if loop.index > id and id <= 11 %}
+                 <p></p>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            {% if id > 11 %}
+                {% for key,parameter in parameters %}
+                <p>The {{key}} is: {{parameter}}</p>
+                {% endfor %}
+                <h2>Sorry the information is over !</h2>
+            {% endif %}
+        </div>
+    </body>
+</html> 

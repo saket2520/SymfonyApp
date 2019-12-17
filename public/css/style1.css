@@ -1,0 +1,27 @@
+p
+{font-family: 'Courier New', Courier, monospace;
+    color: blue;
+    font-size: medium;
+    font-weight: bold;
+
+}
+
+h1
+{font-size: large;
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(134, 62, 45);
+}
+
+div
+{
+height:400px;
+text-align:left;
+width:350px;
+margin-left:20px;
+margin-top:40px;
+border:2px solid black;
+padding-left:18px;
+}
+
+h2
+{font-size:larger;}
